@@ -15,7 +15,7 @@ public abstract class FSEntry {
      }
 
     /*
-   The following characters can't be assigned as the names of files/directories:
+   The following characters can't be assigned as (or used in) the names of files/directories:
     - Forbidden printable ASCII characters in Windows or Linux:
            < (less than)
            > (greater than)

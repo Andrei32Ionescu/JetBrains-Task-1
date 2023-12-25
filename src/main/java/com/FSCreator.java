@@ -48,8 +48,10 @@ public class FSCreator {
                 }
 
             } catch (IOException e) {
-                    /* Transform exception from checked to unchecked since we want to clearly know when file creation
-                        has failed. Easily modifiable if this is not the intended functionality. */
+                        /*
+                        Transform exception from checked to unchecked since we want to clearly know when file creation
+                        has failed. Easily modifiable if this is not the intended functionality.
+                        */
                    throw new RuntimeException("Error creating the text file: " + e.getMessage());
             }
         }

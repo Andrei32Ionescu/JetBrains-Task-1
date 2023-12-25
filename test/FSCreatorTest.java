@@ -17,6 +17,11 @@ import static org.junit.Assert.*;
 
 public class FSCreatorTest {
 
+    @After
+    public void restoreTestingFolder() {
+        deleteContents("testingFolder");
+    }
+
     public void deleteContents(String pathname) {
         File folder = new File(pathname);
         if (folder.exists() && folder.isDirectory()) {
@@ -50,11 +55,6 @@ public class FSCreatorTest {
             System.err.println("Couldn't read text from the file!");
         }
         return null;
-    }
-
-    @After
-    public void restoreTestingFolder() {
-        deleteContents("testingFolder");
     }
 
     @Test
