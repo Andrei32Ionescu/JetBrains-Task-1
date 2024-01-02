@@ -14,7 +14,7 @@ public class FSCreator {
 
         File destinationFolder = new File(destination);
 
-        if(!destinationFolder.exists() || !destinationFolder.isDirectory()){
+        if(!destinationFolder.isDirectory()){
             throw new IllegalArgumentException("No such destination directory for the entry!");
         }
 
